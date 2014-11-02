@@ -3,9 +3,11 @@
     <header class="navbar navbar-default" role="navigation"> 
       <div class="navbar-header">
         <a class="navbar-brand" href="{{ pathFor 'postsList' }}">Microscope</a>
+	<a href="{{pathFor 'postSubmit'}}">Submit</a>
       </div>
     </header>
     <div id="main" class="row-fluid">
+      {{> loginButtons }}
       {{> yield}}
     </div>
   </div>
